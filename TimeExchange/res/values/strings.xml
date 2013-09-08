@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Time Exchange</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_recuerdas_password">¿No recuerdas la contraseña?</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="boton_login">Iniciar Sesión</string>
+    <string name="boton_nuevo_usuario">Nuevo Usuario</string>
+    <string name="txt_show_password">Mostrar Contraseña</string>
+    <string name="txt_poblacion">Población</string>
+    <string name="txt_email">Correo Electrónico</string>
+    <string name="txt_password">Contraseña</string>
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@color/Black">
+ 
+        <!--  Header  Starts-->
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true"
+            android:background="@layout/footer_repeat"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+        <!-- Footer Ends -->
+ 
+        <!-- Registration Form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <!-- Full Name Label -->
+
+            <ImageButton
+                android:id="@+id/btnImagenPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_icon" />
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_edit_text"
+                android:layout_marginTop="@dimen/margin_top_edit_text"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/reg_lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:hint="Apellidos"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <!-- Email Label -->
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <!-- Password Label -->
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_edit_text"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" />
+
+            <CheckBox
+                android:id="@+id/check_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_show_password" />
+
+            <EditText
+                android:id="@+id/reg_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_edit_text"
+                android:layout_marginTop="@dimen/margin_top_edit_text"
+                android:ems="10"
+                android:hint="@string/txt_poblacion"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/reg_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_edit_text"
+                android:layout_marginTop="@dimen/margin_top_edit_text"
+                android:ems="10"
+                android:hint="Provincia"
+                android:inputType="text" />
+            
+			<!-- Botón de Registro -->
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Register New Account" />
+
+            <!-- Link to Login Screen -->
+
+            <TextView
+                android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="Already has account! Login here"
+                android:textColor="@color/Green"
+                android:textSize="20dip" />
+        </LinearLayout>
+
+        <!-- Registration Form Ends -->
+  </RelativeLayout>
+</ScrollView>
